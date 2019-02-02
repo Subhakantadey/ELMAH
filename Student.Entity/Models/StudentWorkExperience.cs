@@ -6,7 +6,7 @@ using System.Text;
 namespace Student.Entity.Models
 {
     [FirestoreData]
-    class StudentWorkExperience
+    public class StudentWorkExperience
 
     { 
         [FirestoreProperty]
