@@ -13,7 +13,7 @@ namespace Student.Entity.Models
             [FirestoreProperty]
             public string StreetName { get; set; }
             [FirestoreProperty]
-        public string City { get; set; }
+            public string City { get; set; }
             [FirestoreProperty]
             public string State { get; set; }
             [FirestoreProperty]

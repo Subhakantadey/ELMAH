@@ -17,6 +17,7 @@ namespace Student.Entity.Models
         [FirestoreProperty]
         public DateTime LoginTime { get; set; }
 
+
     }
 }
  
