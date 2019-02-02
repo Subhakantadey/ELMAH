@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Google.Cloud.Firestore;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,9 @@ namespace Student.API.Controllers
     [ApiController]
     public class StudentEducationController : ControllerBase
     {
+        private const string ProjectId = "studentapp-cdfbd";
+        FirestoreDb firestore = FirestoreDb.Create(ProjectId);
+       
         // GET: api/StudentEducation
         [HttpGet]
         public IEnumerable<string> Get()
@@ -29,6 +33,7 @@ namespace Student.API.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            CollectionReference collection = firestore.Collection("StudentEducation");
         }
 
         // PUT: api/StudentEducation/5
