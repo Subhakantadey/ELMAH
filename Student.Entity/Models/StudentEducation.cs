@@ -7,7 +7,7 @@ namespace Student.Entity.Models
 {
 
     [FirestoreData]
-    class StudentEducation
+    public class StudentEducation
 
     {
         [FirestoreProperty]
