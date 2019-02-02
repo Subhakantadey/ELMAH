@@ -7,7 +7,7 @@ namespace Student.Entity.Models
 {
     [FirestoreData]
     class StudentProfilecs
-    {
+    { 
         [FirestoreProperty]
         public Guid ProfileKey { get; set; }
         [FirestoreProperty]
