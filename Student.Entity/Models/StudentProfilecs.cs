@@ -13,6 +13,8 @@ namespace Student.Entity.Models
         [FirestoreProperty]
         public  int StudentId { get; set; }
         [FirestoreProperty]
+        public string UserId { get; set; }
+        [FirestoreProperty]
         public string FirstName { get; set; }
         [FirestoreProperty]
         public string MiddleName { get; set; }
