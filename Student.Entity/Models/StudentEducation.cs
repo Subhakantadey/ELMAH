@@ -5,18 +5,17 @@ using System.Text;
 
 namespace Student.Entity.Models
 {
-    [FirestoreData]
-    class StudentWorkExperience
 
-    { 
+    [FirestoreData]
+    class StudentEducation
+
+    {
         [FirestoreProperty]
         public Guid ProfileKey { get; set; }
         [FirestoreProperty]
-        public string OrganisationName { get; set; }
+        public string SchoolName { get; set; }
         [FirestoreProperty]
-        public string Role { get; set; }
-        [FirestoreProperty]
-        public string Responsibility { get; set; }
+        public string Specialization { get; set; }
         [FirestoreProperty]
         public Int16 FromMonth { get; set; }
         [FirestoreProperty]
@@ -27,5 +26,4 @@ namespace Student.Entity.Models
         public Int16 ToYear { get; set; }
 
     }
-
 }
