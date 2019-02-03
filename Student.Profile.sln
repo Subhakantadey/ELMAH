@@ -4,10 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{E04508D7-B71B-4DE1-A4FE-72968EF6670F}"
+	ProjectSection(SolutionItems) = preProject
+		studentapp-cdfbd-firebase-adminsdk-98ocr-454df5a19f.json = studentapp-cdfbd-firebase-adminsdk-98ocr-454df5a19f.json
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student.Entity", "Student.Entity\Student.Entity.csproj", "{D1E2F462-5756-46C0-AAB0-260158A2C854}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student.API", "Student.API\Student.API.csproj", "{3518773E-F113-4C55-A3F7-03BFF8D03186}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student.API", "Student.API\Student.API.csproj", "{3518773E-F113-4C55-A3F7-03BFF8D03186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
