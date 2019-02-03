@@ -18,7 +18,6 @@ namespace Student.API.Controllers
         public FirestoreDb db;
         QuerySnapshot allProfile;
         CollectionReference collection;
-       // public CollectionReference ProfileFromDb = db.Collection("cities");
 
         public StudentProfileController()
         {
@@ -56,8 +55,6 @@ namespace Student.API.Controllers
                 {
                     return Profile = document.ConvertTo<StudentProfile>();
                 }
-                // Do anything you'd normally do with a DocumentSnapshot
-                Profile = document.ConvertTo<StudentProfile>();                
                     
             }
             return null;
