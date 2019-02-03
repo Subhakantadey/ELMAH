@@ -1,20 +1,23 @@
-﻿using System;
+﻿using Google.Cloud.Firestore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Student.Entity.Models
 {
-    class LoginDetails
-    {
-    }
     [FirestoreData]
-    class OtherStudentInformation
+    public class LoginDetails
     {
         [FirestoreProperty]
-        public string AreaOfInterest { get; set; }
+        public string UserId { get; set; }
         [FirestoreProperty]
-        public string Accomplishment { get; set; }
+        public string Password { get; set; }
         [FirestoreProperty]
-        public string Skills { get; set; }
+        public string IPAddress { get; set; }
+        [FirestoreProperty]
+        public DateTime LoginTime { get; set; }
+
+
     }
 }
+ 
