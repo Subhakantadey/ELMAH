@@ -7,11 +7,8 @@ namespace Student.Entity.Models
 {
 
     [FirestoreData]
-    class StudentEducation
-
+    public class StudentEducation
     {
-        [FirestoreProperty]
-        public Guid ProfileKey { get; set; }
         [FirestoreProperty]
         public string SchoolName { get; set; }
         [FirestoreProperty]

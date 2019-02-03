@@ -6,14 +6,10 @@ using System.Text;
 namespace Student.Entity.Models
 {
     [FirestoreData]
-    class StudentProfile
+    public class StudentProfile
     { 
         [FirestoreProperty]
-        public Guid ProfileKey { get; set; }
-        [FirestoreProperty]
-        public  int StudentId { get; set; }
-        [FirestoreProperty]
-        public string UserId { get; set; }
+        public  string StudentId { get; set; }
         [FirestoreProperty]
         public string FirstName { get; set; }
         [FirestoreProperty]
@@ -25,9 +21,13 @@ namespace Student.Entity.Models
         [FirestoreProperty]
         public string PhoneNumber { get; set; }
         [FirestoreProperty]
-        public string Address { get; set; }
-        [FirestoreProperty]
         public string ProfilePicture { get; set; }
+        [FirestoreProperty]
+        public virtual OtherStudentInformation OtherStudentInformation { get; set; }
+        [FirestoreProperty]
+        public ICollection<StudentEducation> StudentEducations { get; set; }
+        [FirestoreProperty]
+        public ICollection<StudentWorkExperience> StudentWorkExperiences { get; set; }
 
     }
 }

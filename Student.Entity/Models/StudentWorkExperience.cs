@@ -6,11 +6,8 @@ using System.Text;
 namespace Student.Entity.Models
 {
     [FirestoreData]
-    class StudentWorkExperience
-
+    public class StudentWorkExperience
     { 
-        [FirestoreProperty]
-        public Guid ProfileKey { get; set; }
         [FirestoreProperty]
         public string OrganisationName { get; set; }
         [FirestoreProperty]
