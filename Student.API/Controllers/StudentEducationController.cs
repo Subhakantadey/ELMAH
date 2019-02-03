@@ -33,7 +33,7 @@ namespace Student.API.Controllers
         }
 
         // GET: api/StudentEducation/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public async Task<StudentWorkExperience> GetAsync(string id)
         {
             allProfile = await collection.GetSnapshotAsync();
@@ -49,7 +49,7 @@ namespace Student.API.Controllers
         }
 
         // POST: api/StudentEducation
-        [HttpPost("{id}", Name = "Get")]
+        [HttpPost("{id}")]
         public async Task<string> PostAsync(string id,[FromBody] StudentWorkExperience value)
         {
             DocumentReference document = db.Collection("Profile").Document(id);

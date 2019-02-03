@@ -44,7 +44,7 @@ namespace Student.API.Controllers
         }
 
         // GET: api/StudentProfile/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public async System.Threading.Tasks.Task<StudentProfile> GetAsync(string id)
         {
             allProfile=await collection.GetSnapshotAsync();

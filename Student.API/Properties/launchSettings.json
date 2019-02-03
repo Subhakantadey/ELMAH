@@ -14,7 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
-        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\vishal.masal\\source\\repos\\Student.Profile\\studentapp-cdfbd-firebase-adminsdk-98ocr-454df5a19f.json",
+        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\tushar.gorade\\Source\\Repos\\Student.Profile\\studentapp-cdfbd-firebase-adminsdk-98ocr-454df5a19f.json",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
